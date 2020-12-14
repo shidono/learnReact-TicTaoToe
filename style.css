@@ -1,0 +1,100 @@
+.game {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.game-info > div {
+  text-align: center;
+  font-size: 50px;
+}
+.gameboardinfo {
+  display: table;
+  margin: 0 auto;
+}
+.game-board {
+  display: inline-table;
+}
+.square {
+  width: 100px;
+  height: 100px;
+}
+
+.game-info {
+  display: inline-table;
+  margin-left: 60px;
+}
+.square {
+  font-size: 50px;
+  border: 1px solid black;
+}
+ol button {
+  font-size: 30px;
+}
+button {
+  background: none;
+  color: black;
+  border-radius: 4px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover {
+  background: rgb(2, 115, 245);
+  cursor: pointer;
+}
+.textbox {
+  width: 300px;
+  font-size: 0.7rem;
+  padding: 0.4rem 0;
+  margin: 0.5rem 0;
+  border-bottom: 0.07rem solid blue;
+}
+.textbox i {
+  float: left;
+  top: 0%;
+  text-align: center;
+}
+
+.textbox input {
+  width: 300px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background: none;
+  caret-color: orange;
+  color: black;
+  font-size: 18px;
+}
